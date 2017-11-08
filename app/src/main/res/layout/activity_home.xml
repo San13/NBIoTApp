@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context="com.example.san.nbiottester.MainActivity">
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal">
+
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/group_choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tbgChildSpacing="auto"
+            app:tbgRowSpacing="5dp"
+            app:tbgFlow="true">
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/tgnfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="NFC"/>
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/tgModule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Mod"/>
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/tgCtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Ctr"/>
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/tgProcess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Pro"/>
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/tgEnv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Env"/>
+
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <TextView
+            style="@style/TextStyleDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Connection Status"
+            android:gravity="left" />
+
+        <TextView
+            style="@style/TextStyleDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txtMsg"
+            android:gravity="left" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResult"
+        style="@style/TextStyleDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="text will be here"
+        android:maxLines="15"
+        android:lines="15"
+        android:gravity="left" />
+
+
+</LinearLayout>
