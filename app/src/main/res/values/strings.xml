@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">NBIoTApp</string>
+    <string name="app_name">NbiotTester</string>
+    <string name="nfc">NFC</string>
+    <string name="module">Module</string>
+    <string name="ctr_bits">Ctr Bits</string>
+    <string name="process">Process</string>
+    <string name="Env">Env</string>
+    <string name="bluetooth_not_supported">Bluetooth not supported.</string>
+
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop</string>
+    <string name="menu_start">Connecting...</string>
+
+    <string-array name="planets_array">
+        <item>Mer</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
 </resources>

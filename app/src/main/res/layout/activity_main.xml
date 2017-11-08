@@ -1,18 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_rename__magazines"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.san.nbiotapp.MainActivity">
+    tools:context="com.example.san.nbiottester.MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/txt_bluetooth"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@+id/toolbar"
+        android:text="Availablze Bluetooth Devices"
+        android:textSize="18dp" />
 
-</android.support.constraint.ConstraintLayout>
+    <ListView
+        android:id="@+id/new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/txt_bluetooth"
+        android:layout_below="@+id/txt_bluetooth"
+        android:layout_marginTop="160dp"></ListView>
+
+</RelativeLayout>
